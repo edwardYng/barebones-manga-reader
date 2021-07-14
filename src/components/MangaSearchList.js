@@ -119,9 +119,13 @@ const MangaSearchList = (props) => {
                         ).toDateString()}
                       </Typography>
                       <CardActions>
-                        <Button onClick={handleExpandClick} variant="outlined">
-                          {expanded === manga.data.id ? "close" : "show"}{" "}
-                          descripton
+                        <Button
+                          onClick={handleExpandClick}
+                          variant="outlined"
+                          style={{ textTransform: "none" }}
+                        >
+                          {expanded === manga.data.id ? "Close" : "Show"}{" "}
+                          Descripton
                         </Button>
                       </CardActions>
                       <Collapse
