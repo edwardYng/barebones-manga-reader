@@ -44,7 +44,7 @@ function MangaSearchPage() {
       try {
         await FetchMangaList();
       } catch (e) {
-        setError("Could not get Manga Data from MangaDex API");
+        setError(e.toString());
       }
       setIsLoading(false);
     };
